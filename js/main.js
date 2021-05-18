@@ -24,6 +24,10 @@
         })
 })();
 
+function bodyScrollingToggle(){
+    document.body.classList.toggle("stop-scrolling");
+}
+
 /* portfolio filter and popup */
 
 (() =>{
@@ -81,7 +85,27 @@
                 // convert the screenshot into array
                 screenshots =screenshots.split(",");
                 // console.log(screenshots);
-                
+                slideIndex = 0;
+                popupToggle();
+                popupSlideshow();
             }
         })
+
+        closeBtn.addEventListener("click", () =>{
+            popupToggle();
+        })
+
+        function popupToggle() {
+            popup.classList.toggle("open");
+            bodyScrollingToggle();
+        }
+
+        function popupSlideshow() {
+            const imgSrc = screenshots[slideIndex];
+            // console.log(imgSrc);
+            const popupImg = popup.querySelector(".pp-img");
+            // activate loader until the popupImg loaded
+            popupImg.src = imgSrc;
+        }
+
 })();
