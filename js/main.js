@@ -85,6 +85,14 @@ function bodyScrollingToggle(){
                 // convert the screenshot into array
                 screenshots =screenshots.split(",");
                 // console.log(screenshots);
+                if(screenshots.length === 1){
+                    prevBtn.style.display = "none";
+                    nextBtn.style.display = "none";
+                }
+                else{
+                    nextBtn.style.display = "block";
+                    prevBtn.style.display = "block";
+                }
                 slideIndex = 0;
                 popupToggle();
                 popupSlideshow();
@@ -105,7 +113,37 @@ function bodyScrollingToggle(){
             // console.log(imgSrc);
             const popupImg = popup.querySelector(".pp-img");
             // activate loader until the popupImg loaded
+            popup.querySelector(".pp-loader").classList.add("active");
             popupImg.src = imgSrc;
+            popupImg.onload = () => {
+                // deactivate loader after the popupImg loaded
+                popup.querySelector(".pp-loader").classList.remove("active");
+            }
+            popup.querySelector(".pp-counter").innerHTML = (slideIndex + 1) + " of " +screenshots.length;
         }
+
+        // next slide
+        nextBtn.addEventListener("click", () => {
+            if(slideIndex === screenshots.length-1){
+                slideIndex = 0;
+            }
+            else{
+                slideIndex++;
+            }
+            popupSlideshow();
+            // console.log("slideIndex: " + slideIndex);
+        })
+
+        // prev slide
+        prevBtn.addEventListener("click", () => {
+            if(slideIndex === 0){
+                slideIndex = screenshots.length-1;
+            }
+            else{
+                slideIndex--;
+            }
+            popupSlideshow();
+            // console.log("slideIndex: " + slideIndex);
+        })
 
 })();
