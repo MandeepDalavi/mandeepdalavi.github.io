@@ -67,4 +67,21 @@
             }
             // console.log(event.target);
         })
+
+        portfolioItemsContainer.addEventListener("click", (event) =>{
+            // console.log(event.target.closest(".portfolio-item-inner"));
+            if(event.target.closest(".portfolio-item-inner")){
+                const portfolioItem = event.target.closest(".portfolio-item-inner").parentElement;
+                // console.log(portfolioItem);
+                // get the portfolioItem index
+                itemIndex = Array.from(portfolioItem.parentElement.children).indexOf(portfolioItem);
+                // console.log(itemIndex);
+                screenshots = portfolioItems[itemIndex].querySelector(".portfolio-item-img img").getAttribute("data-screenshots");
+                // console.log(screenshots);
+                // convert the screenshot into array
+                screenshots =screenshots.split(",");
+                // console.log(screenshots);
+                
+            }
+        })
 })();

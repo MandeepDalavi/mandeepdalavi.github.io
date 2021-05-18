@@ -797,6 +797,10 @@ img{
     opacity: 0;
     visibility: hidden;
 }
+.portfolio-popup.open{
+    visibility: visible;
+    opacity: 1;
+}
 .portfolio-popup .pp-details{
     max-width: 1350px;
     width: calc(85% + 30px);
