@@ -1017,3 +1017,48 @@ img{
     padding: 80px 0 80px;
     min-height: 100vh;
 }
+.testmonial-section .testi-box{
+    width: 100%;
+    max-width:600px;
+    margin: auto;
+}
+.testmonial-section .testi-slider{
+    border-radius: 5px;
+}
+.testmonial-section .testi-item{
+    padding:30px;
+    text-align: center;
+    position: relative;
+}
+.testmonial-section .testi-item i{
+    position: absolute;
+    font-size: 30px;
+    color: var(--text-black-600);
+    opacity: 0.1;
+}
+.testmonial-section .testi-item i.left{
+    left:5px;
+    top:5px;
+}
+.testmonial-section .testi-item i.right{
+    right:5px;
+    bottom:5px;
+}
+.testmonial-section .testi-item p{
+    font-size: 16px;
+    line-height:26px;
+    color: var(--text-black-600);
+    margin:0 0 30px;
+}
+.testmonial-section .testi-item img{
+    max-width:70px;
+    display: inline-block;
+    width: 100%;
+}
+.testmonial-section .testi-item span{
+    display: block;
+    margin:10px 0 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-700);
+}
