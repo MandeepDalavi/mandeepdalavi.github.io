@@ -1011,3 +1011,9 @@ img{
 .portfolio-popup .pp-next{
     right: 15px;
 }
+
+/* testmonial section */
+.testmonial-section{
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
