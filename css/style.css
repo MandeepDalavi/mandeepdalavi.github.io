@@ -1090,3 +1090,11 @@ img{
 .testimonial-section .testi-slider-nav span i{
     line-height: 40px;
 }
+
+
+/* contact section */
+.contact-section{
+    background-color: red;
+    padding: 80px 0 80px;
+    min-height: 100vh;
+}
