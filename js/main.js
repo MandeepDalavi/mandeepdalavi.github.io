@@ -32,7 +32,7 @@
                 // prevent default snchor click behavior
                 event.preventDefault();
                 const hash = event.target.hash;
-                console.log(hash);
+                // console.log(hash);
                 // deactivate existing active 'section'
                 document.querySelector(".section.active").classList.add("hide");
                 document.querySelector(".section.active").classList.remove("active");
