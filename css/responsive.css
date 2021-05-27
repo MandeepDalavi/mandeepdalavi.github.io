@@ -7,6 +7,8 @@
 }
 
 @media(max-width:777px){
+    /* .contact-section .w-50,
+    .contact-section .contact-item, */
     .portfolio-popup .description,
     .portfolio-popup .info,
     .portfolio-section .portfolio-item,
@@ -69,6 +71,17 @@
     .about-section .timeline .timeline-item:nth-child(odd) .timeline-item-inner:before{
         left: -30px;
         right: auto;
+    }
+}
+
+@media(max-width:700px){
+    .contact-section .w-50,
+    .contact-section .contact-item{
+        flex: 0 0 100%;
+        max-width:100%;
+    }
+    .contact-section .submit-btn{
+        text-align: center;
     }
 }
 
