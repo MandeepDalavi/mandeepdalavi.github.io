@@ -1,6 +1,13 @@
 
+@media(max-width:999px){
+    .service-section .service-item{
+        flex: 0 0 50%;
+        max-width:50%;
+    }
+}
 
 @media(max-width:777px){
+    /* .service-section .service-item, */
     .about-section .skills .skill-item,
     .about-section .about-info,
     .about-section .about-img,
@@ -63,6 +70,10 @@
 }
 
 @media(max-width:555px){
+    .service-section .service-item{
+        flex: 0 0 100%;
+        max-width:100%;
+    }
     .home-section .home-img .img-box{
         max-width:260px;
     }
