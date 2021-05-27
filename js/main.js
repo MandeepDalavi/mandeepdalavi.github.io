@@ -322,14 +322,14 @@ function bodyScrollingToggle(){
 
 /* hide all sections except active */
 
-// (() => {
+(() => {
 
-//     const sections = document.querySelectorAll(".section");
-//     // console.log(sections);
-//     sections.forEach((section) => {
-//         if(!section.classList.contains("active")){
-//             section.classList.add("hide");
-//         }
-//     })
+    const sections = document.querySelectorAll(".section");
+    // console.log(sections);
+    sections.forEach((section) => {
+        if(!section.classList.contains("active")){
+            section.classList.add("hide");
+        }
+    })
 
-// })();
+})();
