@@ -7,6 +7,9 @@
 }
 
 @media(max-width:777px){
+    .portfolio-popup .description,
+    .portfolio-popup .info,
+    .portfolio-section .portfolio-item,
     /* .service-section .service-item, */
     .about-section .skills .skill-item,
     .about-section .about-info,
@@ -70,6 +73,8 @@
 }
 
 @media(max-width:555px){
+    .portfolio-popup .description,
+    .portfolio-popup .info,
     .service-section .service-item{
         flex: 0 0 100%;
         max-width:100%;
@@ -79,5 +84,12 @@
     }
     .home-section .home-text h2{
         font-size: 40px;
+    }
+    .portfolio-popup .description,
+    .portfolio-popup .info{
+        padding-bottom: 5px;
+    }
+    .portfolio-popup .pp-details-inner{
+        padding-left: 20px;
     }
 }
