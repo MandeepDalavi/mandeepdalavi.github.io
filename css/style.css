@@ -714,6 +714,9 @@ img{
     line-height:26px;
     margin: 15px 0 0;
 }
+.about-section .stats p{
+    color:var(--text-black-600);
+}
 .about-section .statcontainer{
     display: flex;
     flex-direction: row;
