@@ -1,4 +1,14 @@
 
+@media(max-width:1080px){
+    .about-section .stat-item{  
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        max-width:100%;
+        transition: linear;
+    }
+}
+
 @media(max-width:999px){
     .service-section .service-item{
         flex: 0 0 50%;
