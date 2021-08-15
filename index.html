@@ -772,28 +772,28 @@
       </div>
       <div class="row">
         <div class="contact-form">
-          <form>
+          <form class="gform" method="POST" data-email="mandeepdalavi@gmail.com" action="https://script.google.com/macros/s/AKfycbyOZLFGr6WMBxi-Shtfyyf1X9j8oHu8Lbv6QqUn/exec">
               <div class="row">
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Name" class="input-control">
+                    <input type="text" id="name" name="name" placeholder="Name" class="input-control">
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Email" class="input-control">
+                    <input type="text" id="email" name="email" placeholder="Email" class="input-control">
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Subject" class="input-control">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" class="input-control">
                   </div>
                 </div>
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <textarea placeholder="Message" class="input-control"></textarea>
+                    <textarea  id="message" name="message" placeholder="Message" class="input-control"></textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="submit-btn">
-                  <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                  <button type="submit" id="contact" onclick="messagealert();" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
                 </div>
               </div>
           </form>
@@ -862,6 +862,8 @@
   <script src="js/main.js"></script>
   <!-- style switcher js -->
   <script src="js/style-switcher.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
 </body>
 </html>
 
