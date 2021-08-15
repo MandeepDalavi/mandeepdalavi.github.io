@@ -341,3 +341,7 @@ window.addEventListener("load", () => {
         document.querySelector(".preloader").style.display = "none";
     }, 1010)
 })
+
+function messageAlert(){
+    alert("Thank You! Your message has been sent to Mandeep Dalavi");
+}
