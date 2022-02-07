@@ -1221,7 +1221,7 @@ img{
     margin:15px 0 10px;
     text-transform: capitalize;
 }
-.contact-section .contact-item-inner p{
+.contact-section .contact-item-inner a{
     font-size: 16px;
     color: var(--text-black-600);
     line-height:26px;
