@@ -714,6 +714,9 @@ img{
     line-height:26px;
     margin: 15px 0 0;
 }
+.about-section .timeline .timeline-item-inner a{
+    color: var(--skin-color);
+}
 .about-section .stats p{
     color:var(--text-black-600);
 }
@@ -1158,9 +1161,10 @@ img{
     margin: 0 0 30px;
 }
 .testimonial-section .testi-item img{
-    max-width:70px;
+    max-width:90px;
     display:inline-block;
     width: 100%;
+    border-radius: 50%;
 }
 .testimonial-section .testi-item span{
     display:block;
